@@ -1,6 +1,69 @@
+<!-- This is a comment -->
+
+<table border="1">
+<tr>
+<th>Heading</th>
+<th>Another Heading</th>
+</tr>
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
+<hr />
+<br>
+
+
+<ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+<hr />
+<br>
+
+
 <html>
 <body>
-<h1>我的第一个标题</h1>
-<p1>内容</p1>
+<h1 style="font-family:arial;color:red;font-size:20px;">My frist headline</h1>
+<p>My frist paragraph</p>
 </body>
 </html>
+<hr />
+<br>
+
+
+<h1 style="background-color:red;text-align:center">This is a heading</h1>
+<h2 style="background-color:red">This is a heading</h2>
+<h3>This is a heading</h3>
+<hr />
+<br>
+
+
+<p>This is a paragraph.</p>
+<p>This is<br />a para<br />graph with line breaks</p>
+<hr />
+<br>
+
+
+<a href="http://www.w3school.com.cn">This is a link</a>
+<hr />
+<br />
+
+
+<pre>
+npm_install() {
+  cd $BASEDIR
+  if [ -n "$SKIP_NPM" ]; then
+    echo "[chair-shell:build] skip tnpm install"
+    return
+  fi
+  echo "[chair-shell:build] tnpm install to $BASEDIR/node_modules"
+  rm -rf node_modules
+  npm install tnpm $NPM_OPT || exit $?
+  tnpm install --production || exit $?
+}
+</pre>
